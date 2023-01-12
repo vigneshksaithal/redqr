@@ -7,11 +7,11 @@
 }
 
 input[type='text'] {
-  @apply max-w-sm border-2 border-gray-300 bg-white h-10 px-3 py-2 rounded-none text-sm focus:outline-none;
+  @apply w-full max-w-xl border-2 border-gray-300 bg-white h-10 px-3 py-2 rounded-sm text-sm focus:outline-none;
 }
 
 button {
-  @apply bg-red-600 text-white font-bold py-2 px-4 rounded-none shadow-sm transition ease-in-out duration-200;
+  @apply bg-red-600 text-white font-bold py-2 px-4 rounded-sm shadow-sm transition ease-in-out duration-200;
 }
 
 button:hover {
