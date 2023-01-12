@@ -3,15 +3,15 @@
   import { onMount } from 'svelte';
   import { saveAs } from 'file-saver';
 
-  let text = 'https://vipatra.in',
+  let text = 'link',
     canvasEl: HTMLCanvasElement;
 
-  onMount(async () => {
-    await QRCode.toCanvas(canvasEl, text);
+  onMount(() => {
+    getQRCode();
   });
 
-  function getQRCode() {
-    QRCode.toCanvas(canvasEl, text);
+  async function getQRCode() {
+    await QRCode.toCanvas(canvasEl, text);
   }
 
   async function downloadPng() {
@@ -32,7 +32,7 @@
 
 <main class="grid grid-cols-1 lg:grid-cols-2 gap-8 mx-auto max-w-4xl">
   <div class="bg-slate-200 p-10">
-    <canvas class="mx-auto w-full h-full max-w-sm m-6" bind:this={canvasEl} />
+    <canvas class="mx-auto h-96 w-96 m-6" bind:this={canvasEl} />
     <div class="flex justify-center gap-6 pt-4">
       <button class="bg-slate-800 text-white" on:click={downloadPng}
         >Download PNG</button
@@ -46,7 +46,14 @@
       Generate QR Code for any text or URL. You can download the QR Code as PNG
       or SVG.
     </p>
-    <label for="QR Code text">QR Code text/URL</label>
+    <label for="QR Code text">Text/URL</label>
     <input class="" type="text" bind:value={text} on:input={getQRCode} />
   </div>
 </main>
+
+<style lang="postcss">
+  canvas {
+    height: 500px;
+    width: 500px;
+  }
+</style>
