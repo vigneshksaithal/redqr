@@ -1,8 +1,8 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@sveltejs/adapter-static': ^1.0.2
-  '@sveltejs/kit': ^1.0.12
+  '@sveltejs/adapter-static': ^1.0.5
+  '@sveltejs/kit': ^1.2.3
   '@types/file-saver': ^2.0.5
   '@types/qrcode': ^1.5.0
   autoprefixer: ^10.4.13
@@ -21,8 +21,8 @@ dependencies:
   qrcode: 1.5.1
 
 devDependencies:
-  '@sveltejs/adapter-static': 1.0.2_@sveltejs+kit@1.0.12
-  '@sveltejs/kit': 1.0.12_svelte@3.55.1+vite@4.0.4
+  '@sveltejs/adapter-static': 1.0.5_@sveltejs+kit@1.2.3
+  '@sveltejs/kit': 1.2.3_svelte@3.55.1+vite@4.0.4
   '@types/file-saver': 2.0.5
   '@types/qrcode': 1.5.0
   autoprefixer: 10.4.13_postcss@8.4.21
@@ -275,16 +275,16 @@ packages:
     resolution: {integrity: sha512-a5Sab1C4/icpTZVzZc5Ghpz88yQtGOyNqYXcZgOssB2uuAr+wF/MvN6bgtW32q7HHrvBki+BsZ0OuNv6EV3K9g==}
     dev: true
 
-  /@sveltejs/adapter-static/1.0.2_@sveltejs+kit@1.0.12:
-    resolution: {integrity: sha512-pUxDCzYN4qFF5xb4l5xblMkzRS616EiuQGCqVGXM6rS+a9R8DTGfTutIQcPhDEAndrP4RIMPJzo/OhQtioWp2A==}
+  /@sveltejs/adapter-static/1.0.5_@sveltejs+kit@1.2.3:
+    resolution: {integrity: sha512-W5jbgvy9sbYEHs27NQOSFEun+zQwdcL4kpk5qc2kSHl8cKsP5wfXuWDTDRmD1Co40aFcesi5Az5ZzdnPI8KCVg==}
     peerDependencies:
       '@sveltejs/kit': ^1.0.0
     dependencies:
-      '@sveltejs/kit': 1.0.12_svelte@3.55.1+vite@4.0.4
+      '@sveltejs/kit': 1.2.3_svelte@3.55.1+vite@4.0.4
     dev: true
 
-  /@sveltejs/kit/1.0.12_svelte@3.55.1+vite@4.0.4:
-    resolution: {integrity: sha512-+ltedUTLuGIuWJX5TuVeY9pclckFMf/TnaylKD14xDM6zOd2JLGOprAvGuInuqqfgFGF503uMPlPMnzgGrM5Ew==}
+  /@sveltejs/kit/1.2.3_svelte@3.55.1+vite@4.0.4:
+    resolution: {integrity: sha512-VyXiFoqoxV/2gNYPGsoreqGXRfUz1ASBKH+b+1VnF4LXnOvA2h1lTAgniotlamuC6yBM94DkztQSlIRwiS+REA==}
     engines: {node: ^16.14 || >=18}
     hasBin: true
     requiresBuild: true
@@ -305,7 +305,7 @@ packages:
       sirv: 2.0.2
       svelte: 3.55.1
       tiny-glob: 0.2.9
-      undici: 5.15.0
+      undici: 5.15.2
       vite: 4.0.4
     transitivePeerDependencies:
       - supports-color
@@ -409,7 +409,7 @@ packages:
       postcss: ^8.1.0
     dependencies:
       browserslist: 4.21.4
-      caniuse-lite: 1.0.30001444
+      caniuse-lite: 1.0.30001447
       fraction.js: 4.2.0
       normalize-range: 0.1.2
       picocolors: 1.0.0
@@ -445,7 +445,7 @@ packages:
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
     dependencies:
-      caniuse-lite: 1.0.30001444
+      caniuse-lite: 1.0.30001447
       electron-to-chromium: 1.4.284
       node-releases: 2.0.8
       update-browserslist-db: 1.0.10_browserslist@4.21.4
@@ -477,8 +477,8 @@ packages:
     engines: {node: '>=6'}
     dev: false
 
-  /caniuse-lite/1.0.30001444:
-    resolution: {integrity: sha512-ecER9xgJQVMqcrxThKptsW0pPxSae8R2RB87LNa+ivW9ppNWRHEplXcDzkCOP4LYWGj8hunXLqaiC41iBATNyg==}
+  /caniuse-lite/1.0.30001447:
+    resolution: {integrity: sha512-bdKU1BQDPeEXe9A39xJnGtY0uRq/z5osrnXUw0TcK+EYno45Y+U7QU9HhHEyzvMDffpYadFXi3idnSNkcwLkTw==}
     dev: true
 
   /chokidar/3.5.3:
@@ -1107,8 +1107,8 @@ packages:
       glob: 7.2.3
     dev: true
 
-  /rollup/3.10.0:
-    resolution: {integrity: sha512-JmRYz44NjC1MjVF2VKxc0M1a97vn+cDxeqWmnwyAF4FvpjK8YFdHpaqvQB+3IxCvX05vJxKZkoMDU8TShhmJVA==}
+  /rollup/3.10.1:
+    resolution: {integrity: sha512-3Er+yel3bZbZX1g2kjVM+FW+RUWDxbG87fcqFM5/9HbPCTpbVp6JOLn7jlxnNlbu7s/N/uDA4EV/91E2gWnxzw==}
     engines: {node: '>=14.18.0', npm: '>=8.0.0'}
     hasBin: true
     optionalDependencies:
@@ -1154,24 +1154,19 @@ packages:
       totalist: 3.0.0
     dev: true
 
-  /sorcery/0.10.0:
-    resolution: {integrity: sha512-R5ocFmKZQFfSTstfOtHjJuAwbpGyf9qjQa1egyhvXSbM7emjrtLXtGdZsDJDABC85YBfVvrOiGWKSYXPKdvP1g==}
+  /sorcery/0.11.0:
+    resolution: {integrity: sha512-J69LQ22xrQB1cIFJhPfgtLuI6BpWRiWu1Y3vSsIwK/eAScqJxd/+CJlUuHQRdX2C9NGFamq+KqNywGgaThwfHw==}
     hasBin: true
     dependencies:
+      '@jridgewell/sourcemap-codec': 1.4.14
       buffer-crc32: 0.2.13
       minimist: 1.2.7
       sander: 0.5.1
-      sourcemap-codec: 1.4.8
     dev: true
 
   /source-map-js/1.0.2:
     resolution: {integrity: sha512-R0XvVJ9WusLiqTCEiGCmICCMplcCkIwwR11mOSD9CR5u+IXYdiseeEuXCVAjS54zqwkLcPNnmU4OeJ6tUrWhDw==}
     engines: {node: '>=0.10.0'}
-    dev: true
-
-  /sourcemap-codec/1.4.8:
-    resolution: {integrity: sha512-9NykojV5Uih4lgo5So5dtw+f0JgJX30KCNI8gwhz2J9A15wD0Ml6tjHKwf6fTSa6fAdVBdZeNOs9eJ71qCk8vA==}
-    deprecated: Please use @jridgewell/sourcemap-codec instead
     dev: true
 
   /streamsearch/1.1.0:
@@ -1220,7 +1215,7 @@ packages:
       picocolors: 1.0.0
       sade: 1.8.1
       svelte: 3.55.1
-      svelte-preprocess: 5.0.0_oifjsu5oar4lzyaoppb2hxramu
+      svelte-preprocess: 5.0.1_oifjsu5oar4lzyaoppb2hxramu
       typescript: 4.9.4
     transitivePeerDependencies:
       - '@babel/core'
@@ -1243,8 +1238,8 @@ packages:
       svelte: 3.55.1
     dev: true
 
-  /svelte-preprocess/5.0.0_oifjsu5oar4lzyaoppb2hxramu:
-    resolution: {integrity: sha512-q7lpa7i2FBu8Pa+G0MmuQQWETBwCKgsGmuq1Sf6n8q4uaG9ZLcLP0Y+etC6bF4sE6EbLxfiI38zV6RfPe3RSfg==}
+  /svelte-preprocess/5.0.1_oifjsu5oar4lzyaoppb2hxramu:
+    resolution: {integrity: sha512-0HXyhCoc9rsW4zGOgtInylC6qj259E1hpFnJMJWTf+aIfeqh4O/QHT31KT2hvPEqQfdjmqBR/kO2JDkkciBLrQ==}
     engines: {node: '>= 14.10.0'}
     requiresBuild: true
     peerDependencies:
@@ -1286,7 +1281,7 @@ packages:
       detect-indent: 6.1.0
       magic-string: 0.27.0
       postcss: 8.4.21
-      sorcery: 0.10.0
+      sorcery: 0.11.0
       strip-indent: 3.0.0
       svelte: 3.55.1
       typescript: 4.9.4
@@ -1360,8 +1355,8 @@ packages:
     hasBin: true
     dev: true
 
-  /undici/5.15.0:
-    resolution: {integrity: sha512-wCAZJDyjw9Myv+Ay62LAoB+hZLPW9SmKbQkbHIhMw/acKSlpn7WohdMUc/Vd4j1iSMBO0hWwU8mjB7a5p5bl8g==}
+  /undici/5.15.2:
+    resolution: {integrity: sha512-JsN6meyJESMJaLqOuozstwrolSkLWlTIT4qpGoKepNdnZy7HJMPKB0v0Td/CepGgoiPpUSvVO9Nh/5N9QrmDgQ==}
     engines: {node: '>=12.18'}
     dependencies:
       busboy: 1.6.0
@@ -1410,7 +1405,7 @@ packages:
       esbuild: 0.16.17
       postcss: 8.4.21
       resolve: 1.22.1
-      rollup: 3.10.0
+      rollup: 3.10.1
     optionalDependencies:
       fsevents: 2.3.2
     dev: true
